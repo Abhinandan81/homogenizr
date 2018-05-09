@@ -1,18 +1,18 @@
-#' @title HomogenizR
-#' @name Homogeni
+#' @title Harmonizr
+#' @name Harmonizr
 #' @author Abhinandan Satpute
 #'
 #' @description  Check whether the input field(column) names vector has all mandatory fileds or not
 #'
 #' @param input_field_names_vector vector of field names extracted from dataframe, list or vector
 #' @param mandatory_fields_vector vector of mandatory fields
-#' @param case_sensitive_check to specify the case sensitveness criteria while matching field names
-#' @param sequence_check to specify whether to take the order of input fileds into the consideration or not
+#' @param case_sensitive_check `TRUE` to keep the case sensitive check on while matching the input fields with the mandatory fields
+#' @param sequence_check `TRUE` to check if the order of input fileds is exactly same as mandatory fields
 #'
 #' @return returns TRUE if the \code{input_field_names_vector} has all \code{mandatory_fields_vector} else FALSE
 
 
-is_homogeneous <- function(input_field_names_vector, mandatory_fields_vector, case_sensitive_check = TRUE, sequence_check = FALSE) {
+is_consistent <- function(input_field_names_vector, mandatory_fields_vector, case_sensitive_check = TRUE, sequence_check = FALSE) {
 
   if(!case_sensitive_check){
     input_field_names_vector <- tolower(input_field_names_vector)

@@ -22,7 +22,8 @@
 #' consistency_status
 #' FALSE
 #' 
-#' consistency_status <- is_consistent(input_field_vector, reference_field_vector, case_sensitive_check = FALSE, sequence_check = TRUE)
+#' consistency_status <- is_consistent(input_field_vector, reference_field_vector, case_sensitive_check = FALSE,
+#'  sequence_check = TRUE)
 #' consistency_status
 #' FALSE
 #' 

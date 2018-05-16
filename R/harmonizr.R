@@ -11,20 +11,18 @@
 #'
 #' @return returns TRUE if the \code{input_field_names_vector} has all \code{mandatory_fields_vector} else FALSE
 #' @examples
-#' input_field_vector <- c("platform", "process", "Site", "Product", "Year")
-#' reference_field_vector <- c("Platform", "Process", "Site", "Product")
+#' input_fields <- c("platform", "process", "Site", "Product", "Year")
+#' reference_fields <- c("Platform", "Process", "Site", "Product")
 #' 
-#' consistency_status <- is_consistent(input_field_vector, reference_field_vector, case_sensitive_check = FALSE)
+#' consistency_status <- is_consistent(input_fields, reference_fields, case_sensitive_check = FALSE)
 #' consistency_status
 #' TRUE
 #' 
-#' consistency_status <- is_consistent(input_field_vector, reference_field_vector)
+#' consistency_status <- is_consistent(input_fields, reference_fields)
 #' consistency_status
 #' FALSE
 #' 
-#' consistency_status <- is_consistent(input_field_vector, reference_field_vector, case_sensitive_check = FALSE,
-#'  sequence_check = TRUE)
-#' consistency_status
+#' is_consistent(input_fields, reference_fields, case_sensitive_check = FALSE, sequence_check = TRUE)
 #' FALSE
 #' 
 

@@ -6,7 +6,7 @@ Author: Abhinandan Satpute
 Maintainer: Abhinandan Satpute <abhinandansatpute@gmail.com>
 Description: Check whether the input data(column names) vector is consistent with reference for different conditions.
     The "is_consistent" function will check whether the input vector has all fields mentioned in the reference vector. 
-License: MIT
+License: MIT | file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
